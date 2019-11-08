@@ -11,7 +11,7 @@ server.use('/api/messages', hubsRouter);
 server.get('/', (req, res) => {
 res.send(`
     <h2>Message API</h>
-    <p>Welcome to my API</p>
+    <p>Welcome to my API</P>
   `);
 })
 
