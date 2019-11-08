@@ -1,12 +1,12 @@
 const express = require('express');
 
-const hubsRouter= require('./data/db');
+const postsRouter= require('./data/posts/post-router');
 
 const server = express();
+
 server.use(express.json());
 
-server.use('/api/comments', hubsRouter);
-server.use('/api/messages', hubsRouter);
+server.use('/api/posts', postsRouter);
 
 server.get('/', (req, res) => {
 res.send(`
